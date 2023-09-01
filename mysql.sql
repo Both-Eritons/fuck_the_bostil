@@ -1,0 +1,28 @@
+CREATE TABLE if NOT EXISTS accounts(
+id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+pUsername VARCHAR(24) NOT NULL UNIQUE,
+pPassword VARCHAR(150) NOT NULL
+);
+
+CREATE TABLE if NOT EXISTS playerInfo(
+pUsername VARCHAR(24) NOT NULL,
+pSkin INT DEFAULT 123,
+pLevel INT DEFAULT 1,
+pMoney INT DEFAULT 1234
+);
+
+CREATE TABLE if NOT EXISTS playeradmin(
+pUsername VARCHAR(24) NOT NULL,
+pAdminLevel INT DEFAULT 1
+);
+CREATE TABLE playercombat(
+pUsername VARCHAR(24) NOT NULL,
+pDeath INT DEFAULT 0,
+pKill INT DEFAULT 0,
+pGiveDamage INT DEFAULT 0,
+pTakeDamage INT DEFAULT 0,
+pGiveHeadShot INT DEFAULT 0,
+pTakeHeadShot INT DEFAULT 0
+
+);
+playercombat

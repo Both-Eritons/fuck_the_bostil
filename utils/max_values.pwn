@@ -1,0 +1,3 @@
+#define MAX_LOGIN_TRIES 3
+#define MAX_PASSWORD_LEN 20
+#define MAX_TELEPORTS 4
